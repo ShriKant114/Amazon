@@ -4,6 +4,79 @@
     border: border-box;
 }
 
+  /* Educational Project Disclaimer */
+ /* Overlay */
+ #disclaimerPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .popup-box {
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+    animation: slideUp 0.4s ease-in-out;
+  }
+
+  @keyframes slideUp {
+    from {transform: translateY(50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+
+  .popup-box button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .popup-box button:hover {
+    background: #e60000;
+  }
+
+  .popup-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .popup-message {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .popup-emojis {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+
+/* web css */
+
 .navbar {
     height: 55px;
     background-color: #030414;

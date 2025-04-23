@@ -11,7 +11,25 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <hrder>
+     <!-- Educational Project Disclaimer -->
+    <div id="disclaimerPopup">
+      <div class="popup-box">
+        <button onclick="closeDisclaimer()">✖</button>
+        <div class="popup-title">⚠️ Educational Disclaimer</div>
+        <div class="popup-message">
+          📢 <strong>DISCLAIMER:</strong> THIS PAGE WAS MADE AS A <strong>PERSONAL EDUCATIONAL PROJECT</strong>.<br><br>
+          This is <strong><u>NOT</u> the official site</strong> of the company or brand identified on the page.<br>
+          The creator of this page is <strong><u>NOT affiliated</u></strong> with the company or brand in any way.<br><br>
+          This page is a <strong>personal project</strong> made in connection with an <strong>educational exercise</strong>.
+        </div>
+        
+        
+        <div class="popup-emojis">🙏 Thanks for understanding! 💡💻</div>
+      </div>
+    </div>
+
+
+    <header>
       <div class="navbar">
         <div class="nav-logo border">
           <div class="logo"></div>
@@ -37,9 +55,9 @@
         <div class="nav-signin border">
           <p class="s1">
             Hello,
-            <a href="signin.html">sign in</a>
+            <a >sign in</a>
           </p>
-          <p class="nav2">Account &amp; <a href="login.html">login</a></p>
+          <p class="nav2">Account &amp; <a>login</a></p>
         </div>
 
         <div class="retuo border">
@@ -72,7 +90,7 @@
           <p>Shop deals in Electronics</p>
         </div>
       </div>
-    </hrder>
+    </header>
 
     <div class="hero-Section">
       <!-- <div class="left border">
@@ -261,5 +279,10 @@
         </div>
       </div>
     </footer>
+    <script>
+      function closeDisclaimer() {
+        document.getElementById("disclaimerPopup").style.display = "none";
+      }
+    </script>
   </body>
 </html>
